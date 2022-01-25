@@ -1,0 +1,30 @@
+[
+  {
+    "id": "samsung",
+    "title": "Samsung"
+  },
+  {
+    "id": "nokia",
+    "title": "Nokia"
+  },
+  {
+    "id": "apple",
+    "title": "Apple"
+  },
+  {
+    "id": "lg",
+    "title": "LG"
+  },
+  {
+    "id": "huawei",
+    "title": "Huawei"
+  },
+  {
+    "id": "xiaomi",
+    "title": "Xiaomi"
+  },
+  {
+    "id": "general-mobile",
+    "title": "General Mobile"
+  }
+]
