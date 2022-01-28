@@ -95,10 +95,10 @@ select {
     border: 1px solid $grey-light2;
     z-index: 1;
 
-    &--opened {
-      border-bottom-color: transparent;
-      border-radius: 4px 4px 0 0;
-    }
+    // &:hover {
+    //   border-bottom-color: transparent;
+    //   border-radius: 4px 4px 0 0;
+    // }
 
     &-badge {
       position: absolute;
@@ -128,6 +128,7 @@ select {
     border: 1px solid $grey-light2;
     border-radius: 4px 0 4px 4px;
     z-index: -1;
+    display: none;
   }
 
   &__inner {
@@ -153,7 +154,7 @@ select {
       float: left;
       overflow: hidden;
       object-fit: contain;
-      border: 1px solid #e5e5e5;
+      border: 1px solid $grey-light4;
       border-radius: 4px;
     }
 
@@ -175,13 +176,21 @@ select {
       color: $red;
     }
   }
+
+  &:hover {
+    .basket__open-button {
+      border-bottom-color: transparent;
+      border-radius: 4px 4px 0 0;
+    }
+    .basket__content {
+      display: block;
+    }
+  }
 }
 
 .main-top {
-  .container {
-    @include center-between;
-    height: 84px;
-  }
+  @include center-between;
+  padding: 18px 0;
 
   &__title {
     display: block;
@@ -211,4 +220,45 @@ select {
     color: $grey-light2;
     appearance: none;
   }
+}
+
+.main-content {
+  display: flex;
+}
+
+.filter {
+  width: 224px;
+  padding-right: 20px;
+
+  &__section {
+    padding: 12px 0;
+  }
+
+  &__section-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $grey-dark;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: $grey;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &--active {
+      color: $orange;
+    }
+  }
+}
+
+.results {
+  width: calc(100% - 224px);
 }

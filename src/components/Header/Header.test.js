@@ -9,6 +9,6 @@ describe("<Header />", () => {
     expect(
       screen.getByPlaceholderText(/25 milyon’dan fazla ürün içerisinde ara/i)
     ).toBeInTheDocument(); // search component
-    expect(screen.getByTestId("basket-open-button")).toBeInTheDocument(); // basket component
+    expect(screen.getByText("Sepetim")).toBeInTheDocument(); // basket component
   });
 });

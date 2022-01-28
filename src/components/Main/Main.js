@@ -1,9 +1,13 @@
 import Topbar from "./Topbar";
+import Content from "./Content";
 
 const Main = () => {
   return (
     <main data-testid="main">
-      <Topbar />
+      <div className="container">
+        <Topbar />
+        <Content />
+      </div>
     </main>
   );
 };
