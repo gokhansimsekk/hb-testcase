@@ -28,6 +28,12 @@ button {
   }
 }
 
+select {
+  &:is(:focus, :active) {
+    outline: none;
+  }
+}
+
 .container {
   width: 1280px;
   margin: auto;
@@ -82,7 +88,7 @@ button {
 
   &__open-button {
     position: relative;
-    width: 118px;
+    width: 120px;
     height: 48px;
     border-radius: 4px;
     background-color: $white;
@@ -168,5 +174,41 @@ button {
       font-size: 10px;
       color: $red;
     }
+  }
+}
+
+.main-top {
+  .container {
+    @include center-between;
+    height: 84px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: $grey-dark;
+  }
+
+  &__search {
+    font-size: 15px;
+    color: $grey-light2;
+  }
+
+  &__query {
+    font-size: 15px;
+    color: $black;
+  }
+
+  &__select {
+    height: 48px;
+    padding: 0 30px 0 15px;
+    border-radius: 4px;
+    background: $white url("/assets/images/caret-down.svg") no-repeat
+      calc(100% - 11px) center;
+    border: 1px solid $grey-light2;
+    font-size: 17px;
+    color: $grey-light2;
+    appearance: none;
   }
 }

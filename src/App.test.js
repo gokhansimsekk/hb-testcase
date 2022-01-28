@@ -7,6 +7,5 @@ describe("<App />", () => {
 
     expect(screen.getByTestId("header")).toBeInTheDocument();
     expect(screen.getByTestId("main")).toBeInTheDocument();
-    expect(screen.getByTestId("footer")).toBeInTheDocument();
   });
 });

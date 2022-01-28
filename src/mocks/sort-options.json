@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lowest",
+    "title": "En Düşük Fiyat"
+  },
+  {
+    "id": "highest",
+    "title": "En Yüksek Fiyat"
+  },
+  {
+    "id": "newest",
+    "title": "En Yeniler (A>Z)"
+  },
+  {
+    "id": "oldest",
+    "title": "En Yeniler (Z>A)"
+  }
+]
