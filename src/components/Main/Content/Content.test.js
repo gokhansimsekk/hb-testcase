@@ -6,6 +6,6 @@ describe("<Content />", () => {
     render(<Content />);
 
     expect(screen.getByTestId("filter")).toBeInTheDocument(); // filter
-    expect(screen.getByText("Results")).toBeInTheDocument(); // results
+    expect(screen.getByTestId("results")).toBeInTheDocument(); // results
   });
 });

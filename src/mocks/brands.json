@@ -1,9 +1,5 @@
 [
   {
-    "id": "samsung",
-    "title": "Samsung"
-  },
-  {
     "id": "nokia",
     "title": "Nokia"
   },
@@ -22,9 +18,5 @@
   {
     "id": "xiaomi",
     "title": "Xiaomi"
-  },
-  {
-    "id": "general-mobile",
-    "title": "General Mobile"
   }
 ]

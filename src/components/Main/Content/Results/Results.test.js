@@ -5,6 +5,6 @@ describe("<Results />", () => {
   it("should render component", () => {
     render(<Results />);
 
-    expect(screen.getByText("Results")).toBeInTheDocument();
+    expect(screen.getByTestId("results")).toBeInTheDocument();
   });
 });

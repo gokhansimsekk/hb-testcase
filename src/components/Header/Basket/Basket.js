@@ -34,7 +34,9 @@ const Basket = () => {
             <div>
               <span className="basket__item-text">
                 iPhone 11 Kırmızı Kılıflı Garantili TelefoniPhone 11 Kırmızı
-                Kılıflı Garantili
+                Kılıflı Garantili iPhone 11 Kırmızı Kılıflı Garantili
+                TelefoniPhone 11 Kırmızı Kılıflı Garantili iPhone 11 Kırmızı
+                Kılıflı Garantili TelefoniPhone 11 Kırmızı Kılıflı Garantili
               </span>
               <button className="basket__item-remove-button">Kaldır</button>
             </div>

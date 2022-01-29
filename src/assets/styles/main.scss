@@ -7,6 +7,13 @@
   justify-content: space-between;
 }
 
+@mixin line-limiter($lines: 1) {
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +26,7 @@
 
 button {
   cursor: pointer;
+  border: 0;
 
   &:is(:focus, :active) {
     outline: none;
@@ -59,8 +67,9 @@ select {
     width: 100%;
     height: 48px;
     margin: 0 100px 0 154px;
-    padding: 0 27px;
-    background-color: #eeeeee;
+    padding: 0 25px 0 45px;
+    background: $grey-light5 url("/assets/images/search-icon.svg") no-repeat
+      27px center;
     border-radius: 48px;
 
     &-input {
@@ -94,11 +103,6 @@ select {
     background-color: $white;
     border: 1px solid $grey-light2;
     z-index: 1;
-
-    // &:hover {
-    //   border-bottom-color: transparent;
-    //   border-radius: 4px 4px 0 0;
-    // }
 
     &-badge {
       position: absolute;
@@ -159,7 +163,7 @@ select {
     }
 
     &-text {
-      display: block;
+      @include line-limiter(2);
       line-height: 18px;
       font-size: 12px;
       color: $grey-dark;
@@ -224,6 +228,7 @@ select {
 
 .main-content {
   display: flex;
+  padding-bottom: 100px;
 }
 
 .filter {
@@ -260,5 +265,150 @@ select {
 }
 
 .results {
+  display: flex;
+  flex-wrap: wrap;
   width: calc(100% - 224px);
+}
+
+.card {
+  width: 254px;
+  height: 481px;
+  margin-right: 13px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+
+  &__content {
+    padding: 15px 15px 0 15px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 339px;
+    padding: 3px 15px;
+    border: 1px solid $grey-light4;
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    @include line-limiter(2);
+    min-height: 37px;
+    margin-bottom: 2px;
+    color: $grey-dark;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__feature {
+    * {
+      font-size: 12px;
+      color: $grey-dark;
+      line-height: 18px;
+    }
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__price {
+    margin-top: 10px;
+    color: $black;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__old-price {
+    color: $grey-light1;
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+
+  &__discount-rate {
+    color: $red;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__button {
+    width: 100%;
+    height: 32px;
+    margin-top: 35px;
+    background-color: $orange-light;
+    color: $orange;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 7px;
+    display: none;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &:disabled {
+      background-color: $grey-light6;
+      color: $grey-light2;
+    }
+  }
+
+  &:hover {
+    border-color: $grey-light3;
+
+    .card__image {
+      border-color: transparent;
+    }
+    .card__feature,
+    .card__price,
+    .card__old-price,
+    .card__discount-rate {
+      display: none;
+    }
+    .card__button {
+      display: block;
+    }
+  }
+}
+
+.paginator {
+  width: 100%;
+  margin-top: 10px;
+
+  &__button {
+    width: 33px;
+    height: 33px;
+    margin-right: 6.6px;
+    border: 1px solid $grey-light5;
+    border-radius: 9px;
+    background-color: $white;
+    font-size: 10px;
+    color: $grey;
+
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+    }
+
+    &:first-child {
+      margin-right: 13.2px;
+    }
+
+    &:last-child {
+      margin-left: 13.2px;
+    }
+
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+  }
 }
