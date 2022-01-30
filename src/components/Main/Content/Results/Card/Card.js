@@ -1,6 +1,20 @@
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "store/basketSlice";
 import PropTypes from "prop-types";
 
 const Card = ({ data }) => {
+  const dispatch = useDispatch();
+
+  const basketIds = useSelector((state) => state.basket.ids);
+  const isInBasket = basketIds.includes(data.id);
+
+  const addToBasket = () => {
+    const { id, title, image } = data;
+    dispatch(
+      addItem({ id, title, image, inserttime: new Date().toLocaleString() })
+    );
+  };
+
   return (
     <div className="card" title={data.title}>
       <div className="card__image">
@@ -23,8 +37,13 @@ const Card = ({ data }) => {
             <span className="card__discount-rate"> {data.discount_rate}</span>
           </div>
         )}
-        <button className="card__button" disabled={data.id === 3}>
-          {data.id === 3 ? "Bu ürünü sepete ekleyemezsiniz." : "Sepete Ekle"}
+        <button
+          className="card__button"
+          onClick={addToBasket}
+          disabled={isInBasket}
+          data-testid="add-to-basket"
+        >
+          {isInBasket ? "Bu ürünü sepete ekleyemezsiniz." : "Sepete Ekle"}
         </button>
       </div>
     </div>

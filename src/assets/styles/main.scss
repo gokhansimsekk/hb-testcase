@@ -167,18 +167,25 @@ select {
       line-height: 18px;
       font-size: 12px;
       color: $grey-dark;
+      min-height: 37px;
     }
 
     &-remove-button {
       width: 49px;
       height: 18px;
-      margin-top: 20px;
+      margin-top: 17px;
       background-color: $white;
       border: 1px solid $red;
       border-radius: 4px;
       font-size: 10px;
       color: $red;
     }
+  }
+
+  &__no-data {
+    padding-top: 15px;
+    text-align: center;
+    color: $grey-light3;
   }
 
   &:hover {

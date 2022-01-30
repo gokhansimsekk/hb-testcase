@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen } from "utils/test-utils";
 import Card from "./Card";
 
 describe("<Card />", () => {
@@ -13,8 +13,6 @@ describe("<Card />", () => {
           price: "124,00",
           discounted_price: "90,85",
           discount_rate: "12%",
-          image:
-            "https://productimages.hepsiburada.net/s/158/550/110000115797838.jpg/format:webp",
           inserttime: "2020-05-01",
         }}
       />
@@ -27,6 +25,10 @@ describe("<Card />", () => {
     expect(screen.getByText("124,00 TL")).toBeInTheDocument();
     expect(screen.getByText("12%")).toBeInTheDocument();
     expect(screen.getByTestId("old-price-discount-rate")).toBeInTheDocument();
+    expect(screen.queryByTestId("add-to-basket")).not.toBeDisabled();
+    expect(screen.getByTestId("add-to-basket")).toHaveTextContent(
+      /Sepete Ekle/i
+    );
   });
 
   it("should render just price if that not discounted", () => {
@@ -38,8 +40,6 @@ describe("<Card />", () => {
           brand: "apple",
           color: "black",
           price: "124,00",
-          image:
-            "https://productimages.hepsiburada.net/s/158/550/110000115797838.jpg/format:webp",
           inserttime: "2020-05-01",
         }}
       />
@@ -49,5 +49,38 @@ describe("<Card />", () => {
     expect(
       screen.queryByTestId("old-price-discount-rate")
     ).not.toBeInTheDocument();
+  });
+
+  it("should disabled the button when product in basket", () => {
+    render(
+      <Card
+        data={{
+          id: 4,
+          title: "Apple iPhone 11 Pro Max (64GB)",
+          brand: "apple",
+          color: "black",
+          price: "124,00",
+          inserttime: "2020-05-01",
+        }}
+      />,
+      {
+        initialState: {
+          basket: {
+            ids: [4],
+            entities: {
+              4: {
+                id: 4,
+                title: "Apple iPhone 11 Pro Max (64GB)",
+              },
+            },
+          },
+        },
+      }
+    );
+
+    expect(screen.getByTestId("add-to-basket")).toBeDisabled();
+    expect(screen.getByTestId("add-to-basket")).toHaveTextContent(
+      /Bu ürünü sepete ekleyemezsiniz./i
+    );
   });
 });

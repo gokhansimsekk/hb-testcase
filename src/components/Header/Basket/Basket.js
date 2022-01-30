@@ -1,48 +1,50 @@
-import { useState, useEffect } from "react";
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
+import { basketSelectors } from "store/basketSlice";
+
+import Row from "./Row";
 
 const Basket = () => {
-  const [isOpen, setOpen] = useState(false);
+  const basket = useSelector((state) => state.basket);
 
-  useEffect(() => {
-    const handleClose = (e) => {
-      if (isOpen && !e.target.closest(".basket")) {
-        setOpen(false);
-      }
-    };
+  const basketItems = useMemo(() => {
+    return basketSelectors.selectAll(basket);
+  }, [basket]);
 
-    window.addEventListener("click", handleClose);
-
-    return () => {
-      window.removeEventListener("click", handleClose);
-    };
-  }, [isOpen]);
+  const isBasketEmpty = useMemo(() => {
+    return basketItems.length === 0;
+  }, [basketItems]);
 
   return (
     <div className="basket">
       <button className="basket__open-button">
-        <span className="basket__open-button-badge">4</span>
+        {!isBasketEmpty && (
+          <span
+            className="basket__open-button-badge"
+            data-testid="basket-badge"
+          >
+            {basketItems.length}
+          </span>
+        )}
         <span className="basket__open-button-text">Sepetim</span>
       </button>
-      <div className="basket__content">
-        <div className="basket__inner">
-          <div className="basket__item">
-            <img
-              className="basket__item-image"
-              src="https://www.onlygfx.com/wp-content/uploads/2020/05/old-mobile-phones-3.png"
-              alt="Ürün Adı"
-            />
-            <div>
-              <span className="basket__item-text">
-                iPhone 11 Kırmızı Kılıflı Garantili TelefoniPhone 11 Kırmızı
-                Kılıflı Garantili iPhone 11 Kırmızı Kılıflı Garantili
-                TelefoniPhone 11 Kırmızı Kılıflı Garantili iPhone 11 Kırmızı
-                Kılıflı Garantili TelefoniPhone 11 Kırmızı Kılıflı Garantili
-              </span>
-              <button className="basket__item-remove-button">Kaldır</button>
-            </div>
+      {
+        <div className="basket__content">
+          <div className="basket__inner">
+            {!isBasketEmpty ? (
+              <div>
+                {basketItems.map((item) => (
+                  <Row key={item.id} data={item} />
+                ))}
+              </div>
+            ) : (
+              <div className="basket__no-data">
+                Sepetinizde ürün bulunmamaktadır.
+              </div>
+            )}
           </div>
         </div>
-      </div>
+      }
     </div>
   );
 };
