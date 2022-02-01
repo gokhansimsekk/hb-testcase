@@ -2,355 +2,359 @@
   {
     "id": 1,
     "title": "Yeni Apple iPhone 13 Pro Max (512 GB) - Grafit",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Apple",
+    "color": "Siyah",
     "price": "28.170,80",
     "image": "https://m.media-amazon.com/images/I/61rIyu6LXQL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-11-01"
   },
   {
     "id": 2,
     "title": "Apple iPhone 12 mini, 256 GB, Mavi, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)",
-    "brand": "apple",
-    "color": "navy-blue",
+    "brand": "Apple",
+    "color": "Lacivert",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/71yDUbp3taL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-02-01"
   },
   {
     "id": 3,
     "title": "Nokia T20 Android 11",
-    "brand": "nokia",
-    "color": "navy-blue",
+    "brand": "Nokia",
+    "color": "Lacivert",
     "price": "6.417,00",
     "image": "https://m.media-amazon.com/images/I/71XQ+EjG8QL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-01"
   },
   {
     "id": 4,
     "title": "Nokia 6.2/Nokia 7.2",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Nokia",
+    "color": "Siyah",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/61n+DMFkNwL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-03-01"
   },
   {
     "id": 5,
     "title": "Microsonic 12289 LG K8 2017",
-    "brand": "lg",
-    "color": "white",
+    "brand": "LG",
+    "color": "Mavi",
     "price": "11.799,00",
     "discounted_price": "9.935,78",
     "discount_rate": "12%",
     "image": "https://m.media-amazon.com/images/I/61tWb3u-SbL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-02-01"
   },
   {
     "id": 6,
     "title": "Microsonic 12290 LG K8 2017",
-    "brand": "lg",
-    "color": "black",
+    "brand": "LG",
+    "color": "Siyah",
     "price": "7.799,00",
     "image": "https://m.media-amazon.com/images/I/61xrR7ry6rL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-01-01"
   },
   {
     "id": 7,
     "title": "Huawei P40 LITE E 6.39\" Akıllı Telefon, 4/64 GB, Siyah",
-    "brand": "huawei",
-    "color": "black",
+    "brand": "Huawei",
+    "color": "Siyah",
     "price": "3.199,00",
     "discounted_price": "2.979,00",
     "discount_rate": "7%",
     "image": "https://m.media-amazon.com/images/I/61gt9xfaPYL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-07-01"
   },
   {
     "id": 8,
     "title": "Huawei P30 Lite 128GB Cep Telefonu Siyah (İthalatçı Garantili)",
-    "brand": "lg",
-    "color": "yellow",
+    "brand": "Huawei",
+    "color": "Sarı",
     "price": "3.999,00",
     "image": "https://m.media-amazon.com/images/I/61nFKVZ0RpL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-08-01"
   },
   {
     "id": 9,
-    "title": "Xiaomi Redmi 9C 3+64 GB Siyah",
-    "brand": "xiaomi",
-    "color": "black",
+    "title": "Xiaomi Redmi 9C 3+64 GB Sarı",
+    "brand": "Xiaomi",
+    "color": "Sarı",
     "price": "2.520,96",
     "image": "https://m.media-amazon.com/images/I/61ONkh5zNIL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-11-01"
   },
   {
     "id": 10,
     "title": "Xiaomi F2 Pro 128 GB Akıllı Telefon Beyaz",
-    "brand": "xiaomi",
-    "color": "white",
+    "brand": "Xiaomi",
+    "color": "Beyaz",
     "price": "7.199,00",
     "image": "https://m.media-amazon.com/images/I/412ng53YP4L._AC_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-11"
   },
   {
     "id": 11,
     "title": "Yeni Apple iPhone 13 Pro Max (512 GB) - Grafit",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Apple",
+    "color": "Siyah",
     "price": "28.170,80",
     "image": "https://m.media-amazon.com/images/I/61rIyu6LXQL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-22"
   },
   {
     "id": 12,
     "title": "Apple iPhone 12 mini, 256 GB, Mavi, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)",
-    "brand": "apple",
-    "color": "navy-blue",
+    "brand": "Apple",
+    "color": "Lacivert",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/71yDUbp3taL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-13"
   },
   {
     "id": 13,
     "title": "Nokia T20 Android 11",
-    "brand": "nokia",
-    "color": "navy-blue",
+    "brand": "Nokia",
+    "color": "Lacivert",
     "price": "6.417,00",
     "image": "https://m.media-amazon.com/images/I/71XQ+EjG8QL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-03-02"
   },
   {
     "id": 14,
     "title": "Nokia 6.2/Nokia 7.2",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Nokia",
+    "color": "Siyah",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/61n+DMFkNwL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-09-01"
   },
   {
     "id": 15,
     "title": "Microsonic 12289 LG K8 2017",
-    "brand": "lg",
-    "color": "white",
+    "brand": "LG",
+    "color": "Mavi",
     "price": "11.799,00",
     "discounted_price": "9.935,78",
     "discount_rate": "12%",
     "image": "https://m.media-amazon.com/images/I/61tWb3u-SbL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-07-01"
   },
   {
     "id": 16,
     "title": "Microsonic 12290 LG K8 2017",
-    "brand": "lg",
-    "color": "black",
+    "brand": "LG",
+    "color": "Siyah",
     "price": "7.799,00",
     "image": "https://m.media-amazon.com/images/I/61xrR7ry6rL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-06-16"
   },
   {
     "id": 17,
     "title": "Huawei P40 LITE E 6.39\" Akıllı Telefon, 4/64 GB, Siyah",
-    "brand": "huawei",
-    "color": "black",
+    "brand": "Huawei",
+    "color": "Siyah",
     "price": "3.199,00",
     "discounted_price": "2.979,00",
     "discount_rate": "7%",
     "image": "https://m.media-amazon.com/images/I/61gt9xfaPYL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-02-17"
   },
   {
     "id": 18,
     "title": "Huawei P30 Lite 128GB Cep Telefonu Siyah (İthalatçı Garantili)",
-    "brand": "lg",
-    "color": "yellow",
+    "brand": "Huawei",
+    "color": "Sarı",
     "price": "3.999,00",
     "image": "https://m.media-amazon.com/images/I/61nFKVZ0RpL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-02-01"
   },
   {
     "id": 19,
-    "title": "Xiaomi Redmi 9C 3+64 GB Siyah",
-    "brand": "xiaomi",
-    "color": "black",
+    "title": "Xiaomi Redmi 9C 3+64 GB Sarı",
+    "brand": "Xiaomi",
+    "color": "Sarı",
     "price": "2.520,96",
     "image": "https://m.media-amazon.com/images/I/61ONkh5zNIL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-09-17"
   },
   {
     "id": 20,
     "title": "Xiaomi F2 Pro 128 GB Akıllı Telefon Beyaz",
-    "brand": "xiaomi",
-    "color": "white",
+    "brand": "Xiaomi",
+    "color": "Beyaz",
     "price": "7.199,00",
     "image": "https://m.media-amazon.com/images/I/412ng53YP4L._AC_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-17"
   },
   {
     "id": 21,
     "title": "Yeni Apple iPhone 13 Pro Max (512 GB) - Grafit",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Apple",
+    "color": "Siyah",
     "price": "28.170,80",
     "image": "https://m.media-amazon.com/images/I/61rIyu6LXQL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-18"
   },
   {
     "id": 22,
     "title": "Apple iPhone 12 mini, 256 GB, Mavi, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)",
-    "brand": "apple",
-    "color": "navy-blue",
+    "brand": "Apple",
+    "color": "Lacivert",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/71yDUbp3taL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-19"
   },
   {
     "id": 23,
     "title": "Nokia T20 Android 11",
-    "brand": "nokia",
-    "color": "navy-blue",
+    "brand": "Nokia",
+    "color": "Lacivert",
     "price": "6.417,00",
     "image": "https://m.media-amazon.com/images/I/71XQ+EjG8QL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-22"
   },
   {
     "id": 24,
     "title": "Nokia 6.2/Nokia 7.2",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Nokia",
+    "color": "Siyah",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/61n+DMFkNwL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-12-21"
   },
   {
     "id": 25,
     "title": "Microsonic 12289 LG K8 2017",
-    "brand": "lg",
-    "color": "white",
+    "brand": "LG",
+    "color": "Mavi",
     "price": "11.799,00",
     "discounted_price": "9.935,78",
     "discount_rate": "12%",
     "image": "https://m.media-amazon.com/images/I/61tWb3u-SbL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-12-01"
   },
   {
     "id": 26,
     "title": "Microsonic 12290 LG K8 2017",
-    "brand": "lg",
-    "color": "black",
+    "brand": "LG",
+    "color": "Siyah",
     "price": "7.799,00",
     "image": "https://m.media-amazon.com/images/I/61xrR7ry6rL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-02-01"
   },
   {
     "id": 27,
     "title": "Huawei P40 LITE E 6.39\" Akıllı Telefon, 4/64 GB, Siyah",
-    "brand": "huawei",
-    "color": "black",
+    "brand": "Huawei",
+    "color": "Siyah",
     "price": "3.199,00",
     "discounted_price": "2.979,00",
     "discount_rate": "7%",
     "image": "https://m.media-amazon.com/images/I/61gt9xfaPYL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-01-03"
   },
   {
     "id": 28,
     "title": "Huawei P30 Lite 128GB Cep Telefonu Siyah (İthalatçı Garantili)",
-    "brand": "lg",
-    "color": "yellow",
+    "brand": "Huawei",
+    "color": "Sarı",
     "price": "3.999,00",
     "image": "https://m.media-amazon.com/images/I/61nFKVZ0RpL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-04-04"
   },
   {
     "id": 29,
-    "title": "Xiaomi Redmi 9C 3+64 GB Siyah",
-    "brand": "xiaomi",
-    "color": "black",
+    "title": "Xiaomi Redmi 9C 3+64 GB Sarı",
+    "brand": "Xiaomi",
+    "color": "Sarı",
     "price": "2.520,96",
     "image": "https://m.media-amazon.com/images/I/61ONkh5zNIL._AC_SL1500_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-04-02"
   },
   {
     "id": 30,
     "title": "Xiaomi F2 Pro 128 GB Akıllı Telefon Beyaz",
-    "brand": "xiaomi",
-    "color": "white",
+    "brand": "Xiaomi",
+    "color": "Beyaz",
     "price": "7.199,00",
     "image": "https://m.media-amazon.com/images/I/412ng53YP4L._AC_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-05-01"
   },
   {
     "id": 31,
     "title": "Yeni Apple iPhone 13 Pro Max (512 GB) - Grafit",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Apple",
+    "color": "Siyah",
     "price": "28.170,80",
     "image": "https://m.media-amazon.com/images/I/61rIyu6LXQL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-11-01"
   },
   {
     "id": 32,
     "title": "Apple iPhone 12 mini, 256 GB, Mavi, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)",
-    "brand": "apple",
-    "color": "navy-blue",
+    "brand": "Apple",
+    "color": "Lacivert",
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/71yDUbp3taL._AC_SX522_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-12-01"
   },
   {
     "id": 33,
     "title": "Nokia T20 Android 11",
-    "brand": "nokia",
-    "color": "navy-blue",
+    "brand": "Nokia",
+    "color": "Lacivert",
     "price": "6.417,00",
     "image": "https://m.media-amazon.com/images/I/71XQ+EjG8QL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-10-01"
   },
   {
     "id": 34,
     "title": "Nokia 6.2/Nokia 7.2",
-    "brand": "apple",
-    "color": "black",
+    "brand": "Nokia",
+    "color": "Siyah",
+    "subItems": [
+      { "id": "apple", "brand": "Apple" },
+      { "id": "nok", "brand": "Nokia" }
+    ],
     "price": "14.799,00",
     "discounted_price": "13.935,78",
     "discount_rate": "6%",
     "image": "https://m.media-amazon.com/images/I/61n+DMFkNwL._AC_SX679_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-10-10"
   },
   {
     "id": 35,
     "title": "Microsonic 12289 LG K8 2017",
-    "brand": "lg",
-    "color": "white",
+    "brand": "LG",
+    "color": "Mavi",
     "price": "11.799,00",
     "discounted_price": "9.935,78",
     "discount_rate": "12%",
     "image": "https://m.media-amazon.com/images/I/61tWb3u-SbL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-10-11"
   },
   {
     "id": 36,
     "title": "Microsonic 12290 LG K8 2017",
-    "brand": "lg",
-    "color": "black",
+    "brand": "LG",
+    "color": "Siyah",
     "price": "7.799,00",
     "image": "https://m.media-amazon.com/images/I/61xrR7ry6rL._AC_SL1000_.jpg",
-    "inserttime": "2020-05-01"
+    "inserttime": "2021-07-11"
   }
 ]

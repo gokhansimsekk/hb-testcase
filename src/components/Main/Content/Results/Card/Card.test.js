@@ -1,5 +1,16 @@
-import { render, screen } from "utils/test-utils";
+import { render, screen, fireEvent } from "utils/test-utils";
 import Card from "./Card";
+import useBasket from "hooks/useBasket";
+
+jest.mock("hooks/useBasket");
+
+const basketMock = {
+  addToBasket: jest.fn(),
+};
+
+beforeEach(() => {
+  useBasket.mockImplementation(() => basketMock);
+});
 
 describe("<Card />", () => {
   it("should render component", () => {
@@ -82,5 +93,23 @@ describe("<Card />", () => {
     expect(screen.getByTestId("add-to-basket")).toHaveTextContent(
       /Bu ürünü sepete ekleyemezsiniz./i
     );
+  });
+
+  it("should call add to basket hook", () => {
+    const data = {
+      id: 4,
+      title: "Apple iPhone 11 Pro Max (64GB)",
+      brand: "apple",
+      color: "black",
+      price: "124,00",
+      inserttime: "2020-05-01",
+    };
+
+    render(<Card data={data} />);
+
+    const button = screen.getByTestId("add-to-basket");
+    fireEvent.click(button);
+
+    expect(basketMock.addToBasket).toHaveBeenCalledWith(data);
   });
 });

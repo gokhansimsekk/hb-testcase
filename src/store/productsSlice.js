@@ -9,11 +9,11 @@ const productsSlice = createSlice({
   name: "products",
   initialState: productsAdapter.getInitialState(),
   reducers: {
-    setData: (state, action) => {
-      productsAdapter.setAll(state, action.payload);
-    },
+    setData: productsAdapter.setAll,
   },
 });
+
+export const productsSelectors = productsAdapter.getSelectors();
 
 export const { setData } = productsSlice.actions;
 

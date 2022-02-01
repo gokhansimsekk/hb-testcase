@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import clsx from "clsx";
+
+import Row from "./Row";
 
 const Section = ({ type, data }) => {
   const _title = () => {
@@ -21,14 +22,7 @@ const Section = ({ type, data }) => {
       <div>
         {data.map((item) => (
           <div key={item.id}>
-            <button
-              className={clsx("filter__button", {
-                "filter__button--active": item.id === "apple",
-              })}
-              data-testid="filter-button"
-            >
-              {item.title} (4)
-            </button>
+            <Row type={type} data={item} />
           </div>
         ))}
       </div>

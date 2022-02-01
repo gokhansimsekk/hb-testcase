@@ -4,5 +4,5 @@ import productsSlice from "./productsSlice";
 
 export default combineReducers({
   basket: basketSlice.reducer,
-  product: productsSlice.reducer,
+  products: productsSlice.reducer,
 });

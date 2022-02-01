@@ -1,13 +1,11 @@
-import { useDispatch } from "react-redux";
-import { removeItem } from "store/basketSlice";
-
 import PropTypes from "prop-types";
+import useBasket from "hooks/useBasket";
 
 const Row = ({ data }) => {
-  const dispatch = useDispatch();
+  const { removeFromBasket } = useBasket();
 
-  const removeFromBasket = () => {
-    dispatch(removeItem(data.id));
+  const handleRemoveFromBasket = () => {
+    removeFromBasket(data.id);
   };
 
   return (
@@ -17,7 +15,7 @@ const Row = ({ data }) => {
         <span className="basket__item-text">{data.title}</span>
         <button
           className="basket__item-remove-button"
-          onClick={removeFromBasket}
+          onClick={handleRemoveFromBasket}
           data-testid="remove-button"
         >
           Kaldır

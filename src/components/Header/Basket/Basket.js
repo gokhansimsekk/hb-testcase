@@ -1,11 +1,21 @@
-import { useMemo } from "react";
-import { useSelector } from "react-redux";
+import { useEffect, useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { basketSelectors } from "store/basketSlice";
+import { setData } from "store/basketSlice";
 
 import Row from "./Row";
 
 const Basket = () => {
+  const dispatch = useDispatch();
   const basket = useSelector((state) => state.basket);
+
+  useEffect(() => {
+    const storedBasket = JSON.parse(localStorage.getItem("basket"));
+
+    if (storedBasket) {
+      dispatch(setData(storedBasket));
+    }
+  }, [dispatch]);
 
   const basketItems = useMemo(() => {
     return basketSelectors.selectAll(basket);
@@ -28,23 +38,21 @@ const Basket = () => {
         )}
         <span className="basket__open-button-text">Sepetim</span>
       </button>
-      {
-        <div className="basket__content">
-          <div className="basket__inner">
-            {!isBasketEmpty ? (
-              <div>
-                {basketItems.map((item) => (
-                  <Row key={item.id} data={item} />
-                ))}
-              </div>
-            ) : (
-              <div className="basket__no-data">
-                Sepetinizde ürün bulunmamaktadır.
-              </div>
-            )}
-          </div>
+      <div className="basket__content">
+        <div className="basket__inner">
+          {!isBasketEmpty ? (
+            <div>
+              {basketItems.map((item) => (
+                <Row key={item.id} data={item} />
+              ))}
+            </div>
+          ) : (
+            <div className="basket__no-data">
+              Sepetinizde ürün bulunmamaktadır.
+            </div>
+          )}
         </div>
-      }
+      </div>
     </div>
   );
 };

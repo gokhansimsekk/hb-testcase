@@ -1,22 +1,19 @@
-import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "store/basketSlice";
+import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
+import useBasket from "hooks/useBasket";
 
 const Card = ({ data }) => {
-  const dispatch = useDispatch();
+  const { addToBasket } = useBasket();
 
   const basketIds = useSelector((state) => state.basket.ids);
   const isInBasket = basketIds.includes(data.id);
 
-  const addToBasket = () => {
-    const { id, title, image } = data;
-    dispatch(
-      addItem({ id, title, image, inserttime: new Date().toLocaleString() })
-    );
+  const handleAddToBasket = () => {
+    addToBasket(data);
   };
 
   return (
-    <div className="card" title={data.title}>
+    <div className="card" title={data.title} data-testid="card-test">
       <div className="card__image">
         <img src={data.image} alt={data.title} />
       </div>
@@ -39,7 +36,7 @@ const Card = ({ data }) => {
         )}
         <button
           className="card__button"
-          onClick={addToBasket}
+          onClick={handleAddToBasket}
           disabled={isInBasket}
           data-testid="add-to-basket"
         >

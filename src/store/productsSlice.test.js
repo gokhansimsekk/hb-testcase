@@ -10,10 +10,7 @@ describe("store > productsSlice", () => {
 
   it("should set data", () => {
     const previousState = { entities: {}, ids: [] };
-
-    expect(
-      productsSlice.reducer(previousState, setData([{ id: 1, title: "Test" }]))
-    ).toEqual({
+    const nextState = {
       ids: [1],
       entities: {
         1: {
@@ -21,6 +18,10 @@ describe("store > productsSlice", () => {
           title: "Test",
         },
       },
-    });
+    };
+
+    expect(
+      productsSlice.reducer(previousState, setData([{ id: 1, title: "Test" }]))
+    ).toEqual(nextState);
   });
 });

@@ -1,5 +1,16 @@
-import { render, screen, fireEvent, waitFor } from "utils/test-utils";
+import { render, screen, fireEvent } from "utils/test-utils";
 import Row from "./Row";
+import useBasket from "hooks/useBasket";
+
+jest.mock("hooks/useBasket");
+
+const basketMock = {
+  removeFromBasket: jest.fn(),
+};
+
+beforeEach(() => {
+  useBasket.mockImplementation(() => basketMock);
+});
 
 describe("<Row />", () => {
   const renderer = () => render(<Row data={{ id: 1, title: "Test" }} />);
@@ -9,14 +20,12 @@ describe("<Row />", () => {
     expect(screen.getByText("Test")).toBeInTheDocument();
   });
 
-  // it("should remove item from basket", async () => {
-  //   renderer();
+  it("should call remove from basket hook", () => {
+    renderer();
 
-  //   const button = screen.getByTestId("remove-button");
-  //   fireEvent.click(button);
+    const button = screen.getByTestId("remove-button");
+    fireEvent.click(button);
 
-  //   await waitFor(() => {
-  //     expect(removeItem).toHaveBeenCalledWith(1);
-  //   });
-  // });
+    expect(basketMock.removeFromBasket).toHaveBeenCalledWith(1);
+  });
 });

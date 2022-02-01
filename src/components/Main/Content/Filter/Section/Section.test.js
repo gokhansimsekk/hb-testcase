@@ -21,8 +21,5 @@ describe("<Section />", () => {
 
     expect(screen.getByText("Marka")).toBeInTheDocument();
     expect(screen.getByText(/Apple/i)).toBeInTheDocument();
-    expect(screen.getByTestId("filter-button")).toHaveClass(
-      "filter__button--active"
-    );
   });
 });

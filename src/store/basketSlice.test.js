@@ -1,4 +1,4 @@
-import basketSlice, { addItem, removeItem } from "./basketSlice";
+import basketSlice, { addItem, removeItem, setData } from "./basketSlice";
 
 describe("store > basketSlice", () => {
   it("should render the initial state", () => {
@@ -11,6 +11,15 @@ describe("store > basketSlice", () => {
 
   it("should add item", () => {
     const previousState = { entities: {}, ids: [] };
+    const nextState = {
+      ids: [1],
+      entities: {
+        1: {
+          id: 1,
+          title: "Test",
+        },
+      },
+    };
 
     expect(
       basketSlice.reducer(
@@ -18,19 +27,9 @@ describe("store > basketSlice", () => {
         addItem({
           id: 1,
           title: "Test",
-          inserttime: new Date().toLocaleString(),
         })
       )
-    ).toEqual({
-      ids: [1],
-      entities: {
-        1: {
-          id: 1,
-          title: "Test",
-          inserttime: new Date().toLocaleString(),
-        },
-      },
-    });
+    ).toEqual(nextState);
   });
 
   it("should remove item", () => {
@@ -43,10 +42,33 @@ describe("store > basketSlice", () => {
       },
       ids: [1],
     };
-
-    expect(basketSlice.reducer(previousState, removeItem(1))).toEqual({
-      ids: [],
+    const nextState = {
       entities: {},
-    });
+      ids: [],
+    };
+
+    expect(basketSlice.reducer(previousState, removeItem(1))).toEqual(
+      nextState
+    );
+  });
+
+  it("should set data", () => {
+    const previousState = {
+      entities: {},
+      ids: [],
+    };
+    const nextState = {
+      ids: [1],
+      entities: {
+        1: {
+          id: 1,
+          title: "Test",
+        },
+      },
+    };
+
+    expect(
+      basketSlice.reducer(previousState, setData([{ id: 1, title: "Test" }]))
+    ).toEqual(nextState);
   });
 });

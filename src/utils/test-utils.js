@@ -1,6 +1,7 @@
 import { render as rtlRender } from "@testing-library/react";
-import { applyMiddleware, createStore } from "@reduxjs/toolkit";
-import thunk from "redux-thunk";
+import { createStore } from "@reduxjs/toolkit";
+import { QueryParamProvider } from "use-query-params";
+import history from "@history";
 
 import { Provider } from "react-redux";
 import reducers from "store/reducers";
@@ -9,12 +10,16 @@ function render(
   ui,
   {
     initialState = {},
-    store = createStore(reducers, initialState, applyMiddleware(thunk)),
+    store = createStore(reducers, initialState),
     ...renderOptions
   } = {}
 ) {
   function Wrapper({ children }) {
-    return <Provider store={store}>{children}</Provider>;
+    return (
+      <Provider store={store}>
+        <QueryParamProvider history={history}>{children}</QueryParamProvider>
+      </Provider>
+    );
   }
   return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
 }

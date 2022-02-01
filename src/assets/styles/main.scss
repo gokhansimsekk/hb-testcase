@@ -42,6 +42,10 @@ select {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .container {
   width: 1280px;
   margin: auto;
@@ -267,6 +271,7 @@ select {
 
     &--active {
       color: $orange;
+      font-weight: 500;
     }
   }
 }
@@ -275,6 +280,12 @@ select {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% - 224px);
+
+  &__no-data {
+    padding-top: 15px;
+    text-align: center;
+    color: $grey-light3;
+  }
 }
 
 .card {
@@ -401,7 +412,8 @@ select {
     font-size: 10px;
     color: $grey;
 
-    &:hover {
+    &:hover,
+    &--active {
       color: $orange;
       border-color: $orange;
     }

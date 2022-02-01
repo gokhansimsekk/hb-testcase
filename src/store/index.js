@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import thunk from "redux-thunk";
 import reducers from "./reducers";
 
 const rootReducer = (state, action) => {
@@ -8,5 +7,4 @@ const rootReducer = (state, action) => {
 
 export default configureStore({
   reducer: rootReducer,
-  middleware: [thunk],
 });
