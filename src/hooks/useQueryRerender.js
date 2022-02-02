@@ -6,12 +6,14 @@ const useQueryRerender = () => {
   const [, rerender] = useState(false);
 
   useEffect(() => {
+    let isMounted = true;
+
     history.listen(() => {
-      rerender((state) => !state);
+      if (isMounted) rerender((state) => !state);
     });
 
     return () => {
-      rerender((state) => !state);
+      isMounted = false;
     };
   }, []);
 };

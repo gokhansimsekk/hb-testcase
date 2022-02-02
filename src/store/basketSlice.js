@@ -7,9 +7,7 @@ const basketAdapter = createEntityAdapter({
 
 const basketSlice = createSlice({
   name: "basket",
-  initialState: basketAdapter.getInitialState({
-    currentItem: null,
-  }),
+  initialState: basketAdapter.getInitialState(),
   reducers: {
     addItem: basketAdapter.addOne,
     removeItem: basketAdapter.removeOne,

@@ -1,11 +1,12 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
-import useBasket from "hooks/useBasket";
+import RemoveModal from "../RemoveModal";
 
 const Row = ({ data }) => {
-  const { removeFromBasket } = useBasket();
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const handleRemoveFromBasket = () => {
-    removeFromBasket(data.id);
+    setModalOpen(true);
   };
 
   return (
@@ -20,6 +21,11 @@ const Row = ({ data }) => {
         >
           Kaldır
         </button>
+        <RemoveModal
+          data={data}
+          isOpen={isModalOpen}
+          onClose={() => setModalOpen(false)}
+        />
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import basketSlice, { addItem, removeItem, setData } from "./basketSlice";
 describe("store > basketSlice", () => {
   it("should render the initial state", () => {
     expect(basketSlice.reducer(undefined, {})).toEqual({
-      currentItem: null,
       entities: {},
       ids: [],
     });

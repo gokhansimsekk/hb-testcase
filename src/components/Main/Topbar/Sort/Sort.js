@@ -11,7 +11,7 @@ const Sort = () => {
   const { sort } = customQuery;
 
   useEffect(() => {
-    if (sort) {
+    if (sort || sort === "") {
       setSelectValue(sort);
     }
   }, [sort]);
